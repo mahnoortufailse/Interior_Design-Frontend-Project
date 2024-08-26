@@ -312,3 +312,18 @@ export const ArtWorkImage = [
     image: "/artwork4.jpg"
   },
 ];
+
+export const DecorationImage = [
+  {
+    image: "/deco1.jpg"
+  },
+  {
+    image: "/deco2.jpg"
+  },
+  {
+    image: "/deco3.jpg"
+  },
+  {
+    image: "/deco4.jpg"
+  },
+];

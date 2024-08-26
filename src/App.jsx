@@ -9,6 +9,7 @@ import ScrollTop from "./components/ScrollTop";
 import RetailDesign from "./pages/RetailDesign";
 import NotFound from "./pages/NotFound";
 import ArtWork from "./pages/ArtWork";
+import Decoration from "./pages/Decoration";
 
 export default function App() {
   return (
@@ -35,6 +36,10 @@ export default function App() {
           <Route
             path="/service/artwork"
             element={<ArtWork/>}
+          />
+          <Route
+            path="/service/decoration"
+            element={<Decoration/>}
           />
          <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/404" />} />

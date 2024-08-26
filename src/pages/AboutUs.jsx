@@ -8,7 +8,7 @@ import PeopleProfile from "../components/AboutComponent/PeopleProfile"
 const AboutUs = () => {
   const data = {
     text: "About Us",
-    image: "./bgAbout.png"
+    image: "./AboutUsNewBG.png"
 }
   return (
     <>

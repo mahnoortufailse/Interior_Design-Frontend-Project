@@ -6,7 +6,7 @@ import WeWork from "../components/ServicesComponent/WeWork"
 const Services = () => {
     const data = {
         text: "Our Services",
-        image: "./servicesBG.png"
+        image: "./ServiceNewBG.png"
     }
     return (
         <>

@@ -4,6 +4,7 @@ import InformationTag from "../components/informationTag";
 import DescriptionServices from "../components/ServiceSingle/DescriptionServices";
 import GalleryPart from "../components/ServiceSingle/GalleryPart";
 import { ProjectPlanningSteps } from "../components/ServiceSingle/ProjectPlanningSteps";
+
 import {
   artwork2D3DCreationSteps,
   service4,

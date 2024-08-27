@@ -5,7 +5,6 @@ import DescriptionServices from "../components/ServiceSingle/DescriptionServices
 import GalleryPart from "../components/ServiceSingle/GalleryPart"
 import { ProjectPlanningSteps } from "../components/ServiceSingle/ProjectPlanningSteps"
 import { projectPlaningSteps, service1, projectPlanImage } from "../utility/ServicesData"
-
 const ServiceProjectPlan = () => {
   const data = {
     text: "Project Plan",

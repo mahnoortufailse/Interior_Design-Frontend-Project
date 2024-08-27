@@ -7,6 +7,7 @@ import { ProjectPlanningSteps } from "../components/ServiceSingle/ProjectPlannin
 import VideoComponent from "../components/ServiceSingle/VideoComponent"
 import { interiorDesignSteps } from "../utility/ServicesData"
 import { service2 } from "../utility/ServicesData"
+
 const InteriorDesign = () => {
     const data = {
         text: "Interior work",

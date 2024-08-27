@@ -4,7 +4,6 @@ import ContactAboutForm from "../components/AboutComponent/ContactAboutForm"
 import HeroAll from "../components/HeroAll"
 import PeopleProfile from "../components/AboutComponent/PeopleProfile"
 
-
 const AboutUs = () => {
   const data = {
     text: "About Us",
@@ -12,6 +11,7 @@ const AboutUs = () => {
 }
   return (
     <>
+   
      <HeroAll data={data}/>
      <BlockQuote/>
      <CardsAbout/>

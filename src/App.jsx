@@ -5,17 +5,18 @@ import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import ServiceProjectPlan from "./pages/ServiceProjectPlan";
 import InteriorDesign from "./pages/InteriorDesign";
-import ScrollTop from "./components/ScrollTop";
+import ScrollToTop from "./components/ScrollToTop";
 import RetailDesign from "./pages/RetailDesign";
 import NotFound from "./pages/NotFound";
 import ArtWork from "./pages/ArtWork";
 import Decoration from "./pages/Decoration";
+import ProjectsPage from "./pages/ProjectsPage";
 
 export default function App() {
   return (
     <div className="bg-[#FFFFFF] dark:bg-gray-800">
       {/* Place ScrollTop here, outside of Routes */}
-      <ScrollTop />
+      <ScrollToTop excludePaths={['/projects/bedroom', '/projects/bathroom', '/projects/kitchen', '/projects/living-room']} />
       <Routes>
         <Route element={<LayOut />}>
           <Route path="/" element={<Home />} />
@@ -40,6 +41,10 @@ export default function App() {
           <Route
             path="/service/decoration"
             element={<Decoration/>}
+          />
+           <Route
+            path="/projects/*"
+            element={<ProjectsPage/>}
           />
          <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/404" />} />

@@ -80,7 +80,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/projects/*"
                 className="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#CDA274] md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-[#CDA274] md:dark:hover:bg-transparent font-light transition-colors duration-300"
               >
                 Project

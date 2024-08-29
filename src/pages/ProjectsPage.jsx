@@ -12,6 +12,8 @@ const ProjectsPage = () => {
   const categoryRef = useRef(null);
 
   useEffect(() => {
+    if (categoryRef.current && location.pathname === "/projects/bedroom/page/1") {
+      return}
     // Scroll to the Category component when the location changes
     if (categoryRef.current) {
       categoryRef.current.scrollIntoView({ behavior: "smooth" });

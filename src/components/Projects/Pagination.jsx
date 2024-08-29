@@ -1,16 +1,15 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+
 const Pagination = ({ currentPage, totalPages, onPageChange, category }) => {
   const navigate = useNavigate();
 
   const handlePageChange = (newPage) => {
     if (newPage < 1 || newPage > totalPages) return;
     onPageChange(newPage);
-    console.log(newPage)
-    navigate(`/projects/${category}/page/${newPage}`);
+    navigate(`/projects/${category}/page/${newPage}`, { replace: true });
   };
 
   return (
@@ -23,16 +22,15 @@ const Pagination = ({ currentPage, totalPages, onPageChange, category }) => {
         <MdArrowBackIosNew />
       </button>
       {Array.from({ length: totalPages }, (_, i) => (
-      <button
-      key={i}
-      onClick={() => handlePageChange(i + 1)}
-      className={`px-3 py-1 m-2 rounded-full border border-[#d38c3f] ${
-        currentPage === i + 1 ? "bg-[#CDA274]" : "bg-white  "
-      }`}
-    >
-      {i + 1}
-    </button>
-    
+        <button
+          key={i}
+          onClick={() => handlePageChange(i + 1)}
+          className={`px-3 py-1 m-2 rounded-full border border-[#d38c3f] ${
+            currentPage === i + 1 ? "bg-[#CDA274]" : "bg-white"
+          }`}
+        >
+          {i + 1}
+        </button>
       ))}
       <button
         onClick={() => handlePageChange(currentPage + 1)}

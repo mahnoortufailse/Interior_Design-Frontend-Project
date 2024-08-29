@@ -1,22 +1,31 @@
+import { useEffect, useRef } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import HeroAll from "../components/HeroAll";
 import Category from "../components/Projects/Category";
 import BedroomComponent from "../components/Projects/BedroomComponent";
 import BathroomComponent from "../components/Projects/BathroomComponent";
 import KitchenComponent from "../components/Projects/KitchenComponent";
 import LivingRoomComponent from "../components/Projects/LivingRoomComponent";
-import { Route, Routes, Navigate } from "react-router-dom";
 
 const ProjectsPage = () => {
-  const data = {
-    text: "Our Projects",
-    image: "/projectsBG.jpg",
-  };
+  const location = useLocation();
+  const categoryRef = useRef(null);
+
+  useEffect(() => {
+    // Scroll to the Category component when the location changes
+    if (categoryRef.current) {
+      categoryRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location.pathname]);
 
   return (
     <>
-      <HeroAll data={data} />
+      <HeroAll data={{ text: "Our Projects", image: "/projectsBG.jpg" }} />
       <div className="p-14">
-        <Category />
+        {/* Assign ref to Category component */}
+        <div ref={categoryRef}>
+          <Category />
+        </div>
         <div className="mt-6 w-full">
           <Routes>
             {/* Default route redirects to bedroom/page/1 */}

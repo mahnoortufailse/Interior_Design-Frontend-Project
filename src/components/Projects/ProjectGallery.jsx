@@ -4,13 +4,13 @@ import Button from "../Button";
 const ProjectGallery = ({data}) => {
   return (
     <div className="flex items-center justify-center min-h-screen w-full px-4 md:px-8 lg:px-12">
-      <div className="w-full max-w-[850px] p-4 md:p-8 bg-white rounded-2xl dark:bg-gray-800">
+      <div className="w-full max-w-[900px] p-4 md:p-8 bg-white rounded-2xl dark:bg-gray-800">
         <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
           {/* Gallery Items */}
           {data.map((item, index) => (
             <div key={index} className="flex flex-col">
               <img
-                className="h-[300px] w-full rounded-lg"
+                className="h-[380px] w-full rounded-lg object-cover"
                 src={item.src}
                 alt={item.alt}
               />

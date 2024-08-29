@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="bg-[#FFFFFF] dark:bg-gray-800">
       {/* Place ScrollTop here, outside of Routes */}
-      <ScrollToTop excludePaths={['/projects/bedroom', '/projects/bathroom', '/projects/kitchen', '/projects/living-room']} />
+      <ScrollToTop excludePaths={['/projects/bedroom', '/projects/bath-room', '/projects/kitchen', '/projects/living-room']} />
       <Routes>
         <Route element={<LayOut />}>
           <Route path="/" element={<Home />} />

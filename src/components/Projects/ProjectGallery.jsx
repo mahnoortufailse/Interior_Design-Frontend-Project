@@ -1,16 +1,15 @@
 /* eslint-disable react/prop-types */
-import Button from "../Button";
-
-const ProjectGallery = ({data}) => {
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+const ProjectGallery = ({ data, onProjectClick }) => {
   return (
-    <div className="flex items-center justify-center min-h-screen w-full px-4 md:px-8 lg:px-12">
-      <div className="w-full max-w-[900px] p-4 md:p-8 bg-white rounded-2xl dark:bg-gray-800">
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
+    <div className="flex items-center justify-center min-h-screen w-full px-2 md:px-6 lg:px-12">
+      <div className="max-[640px]:w-full max-w-[900px] p-2 md:p-8 bg-white rounded-2xl dark:bg-gray-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Gallery Items */}
           {data.map((item, index) => (
             <div key={index} className="flex flex-col">
               <img
-                className="h-[380px] w-full rounded-lg object-cover"
+                className="h-[380px] w-full rounded-lg object-cover max-[640px]:h-[230px]"
                 src={item.src}
                 alt={item.alt}
               />
@@ -22,7 +21,13 @@ const ProjectGallery = ({data}) => {
                     {item.description}
                   </span>
                 </p>
-                <Button />
+
+                <button
+                  onClick={() => onProjectClick(item)}
+                  className="px-4 bg-[#F4F0EC] rounded-full"
+                >
+                  <MdOutlineArrowForwardIos />
+                </button>
               </div>
             </div>
           ))}
@@ -31,7 +36,5 @@ const ProjectGallery = ({data}) => {
     </div>
   );
 };
-
-
 
 export default ProjectGallery;

@@ -7,15 +7,14 @@ const Category = () => {
 
   const handleClick = (category, page = 1) => {
     setActiveButton(category);
-    console.log(category)
     navigate(`${category}/page/${page}`);
   };
   
 
   return (
-    <div className="flex items-center justify-center h-[100px] w-full px-3 md:px-3 lg:py-16 pt-20">
-      <div className="w-full max-w-[700px] p-4 md:p-8 bg-white rounded-sm dark:bg-gray-800 text-center">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-1 border-2  rounded-lg">
+    <div className="flex items-center justify-center h-[100px] w-full px-1 md:px-3 lg:py-16 pt-20 max-[640px]:h-[30px] mb-6">
+      <div className="w-full max-w-[700px] p-4 md:p-8 bg-white rounded-sm dark:bg-gray-800 text-center max-[640px]:w-full">
+        <div className="grid grid-cols-4 md:grid-cols-4 gap-1 border-2  rounded-lg max-[640px]:text-xs max-[640px]:gap-0">
           <button
             onClick={() => handleClick("bedroom")}
             className={`${

@@ -25,7 +25,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange, category }) => {
         <button
           key={i}
           onClick={() => handlePageChange(i + 1)}
-          className={`px-3 py-1 m-2 rounded-full border border-[#d38c3f] ${
+          className={`px-3 py-1 m-2 rounded-full border border-[#d38c3f] max-[640px]:m-1 max-[640px]:px-1  ${
             currentPage === i + 1 ? "bg-[#CDA274]" : "bg-white"
           }`}
         >

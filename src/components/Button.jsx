@@ -4,7 +4,7 @@ const Button = () => {
   return (
     <StyledWrapper>
       <div className="btn-container">
-        <a href="#" className="btn-content">
+        <a href="/project-detail" className="btn-content">
           <span className="icon-arrow">
             <svg
               // eslint-disable-next-line react/no-unknown-property

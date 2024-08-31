@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
               <div className="flex flex-col gap-6 px-3 md:px-20">
                 <div className="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="./public/Logo.png" className="h-8" alt="Flowbite Logo" />
+                <img src="/Logo.png" className="h-8" alt="Flowbite Logo" />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Interno</span>
                 </div>
                  <p className="dark:text-gray-400 text-[#292F36]">It is a long established fact that a reader will be distracted lookings.</p>

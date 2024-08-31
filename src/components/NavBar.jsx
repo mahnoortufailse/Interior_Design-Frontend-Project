@@ -9,7 +9,7 @@ const NavBar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-gray-300 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-60">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 lg:w-[1000px]">
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./public/Logo.png" className="h-8" alt="Logo" />
+          <img src="/Logo.png" className="h-8" alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-gray-100">Interno</span>
         </div>
         <div className="flex md:order-2">

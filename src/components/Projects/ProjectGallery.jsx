@@ -24,7 +24,7 @@ const ProjectGallery = ({ data, onProjectClick }) => {
 
                 <button
                   onClick={() => onProjectClick(item)}
-                  className="px-4 bg-[#F4F0EC] rounded-full"
+                  className="px-4 bg-[#F4F0EC] rounded-full max-[640px]:px-2 max-[640px]:h-[35px]"
                 >
                   <MdOutlineArrowForwardIos />
                 </button>

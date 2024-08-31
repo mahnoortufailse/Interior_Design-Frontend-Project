@@ -2,8 +2,7 @@ import { useState } from "react";
 import ProjectGallery from "./ProjectGallery";
 import Pagination from "./Pagination";
 import { bathRooms } from "../../utility/projectData";
-import ProjectDetails from "../../pages/ProjectDetails";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const BathroomComponent = () => {
   const navigate = useNavigate();
@@ -17,9 +16,11 @@ const BathroomComponent = () => {
     currentPage * itemsPerPage
   );
   
-  const handleProjectClick = (project) => {
-    // Navigate to the project-detail route and pass project data
-    navigate("project-detail", { state: project });
+  const handleProjectClick = (project ,category="bath-room") => {
+    console.log("Navigating to project-detail with project:", project);
+    navigate(`/projects/${category}/page/${currentPage}/project-detail`, {
+      state: project,
+    });
   };
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -34,9 +35,7 @@ const BathroomComponent = () => {
         onPageChange={handlePageChange}
          category="bath-room"
       />
-      <Routes>
-        <Route path="project-detail" element={<ProjectDetails />} />
-      </Routes>
+      
     </>
   );
 };

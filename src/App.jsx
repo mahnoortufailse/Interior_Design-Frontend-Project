@@ -11,6 +11,8 @@ import NotFound from "./pages/NotFound";
 import ArtWork from "./pages/ArtWork";
 import Decoration from "./pages/Decoration";
 import ProjectsPage from "./pages/ProjectsPage";
+import Blog from "./pages/Blog";
+import ContactUsPage from "./pages/ContactUsPage";
 
 export default function App() {
   return (
@@ -45,6 +47,14 @@ export default function App() {
            <Route
             path="/projects/*"
             element={<ProjectsPage/>}
+          />
+          <Route
+            path="/blogs"
+            element={<Blog/>}
+          />
+          <Route
+            path="/contactus"
+            element={<ContactUsPage/>}
           />
          <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/404" />} />

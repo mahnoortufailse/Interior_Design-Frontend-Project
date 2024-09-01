@@ -88,7 +88,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/blogs"
                 className="block py-2 px-3 text-black rounded   md:hover:text-[#CDA274] md:p-0 dark:text-white dark:hover:text-[#CDA274] md:dark:hover:bg-transparent font-normal transition-colors duration-300"
               >
                 Blog
@@ -96,7 +96,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/contactus"
                 className="block py-2 px-3 text-black rounded   md:hover:text-[#CDA274] md:p-0 dark:text-white dark:hover:text-[#CDA274] md:dark:hover:bg-transparent font-normal transition-colors duration-300"
               >
                 Contact

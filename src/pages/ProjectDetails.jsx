@@ -40,12 +40,12 @@ const ProjectDetails = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {project.link}
+                  www.example.com
                 </a>
               </p>
             </div>
 
-            <div className="flex flex-col justify-between gap-2 md:w-1/2 about-text">
+            <div className="flex flex-col  gap-3 md:w-1/2 about-text">
               <h5 className="text-3xl font-bold tracking-tight text-gray-900 mb-4 dark:text-white">
                 {project.title}
               </h5>
@@ -58,7 +58,7 @@ const ProjectDetails = () => {
             </div>
           </div>
           <img
-            className="h-[380px] w-full rounded-xl object-cover max-[640px]:rounded-none"
+            className="h-[450px] w-full rounded-xl object-cover max-[640px]:rounded-none"
             src={project.src}
             alt={project.alt}
           />

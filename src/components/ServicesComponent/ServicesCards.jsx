@@ -43,7 +43,7 @@ const ServicesCards = () => {
             <p className="mb-5 text-sm text-gray-500 dark:text-gray-400">
               {item.description}
             </p>
-            <Link to={item.link}><p className="font-bold">Get More</p></Link>
+            <Link to={item.link} target="_blank"><p className="font-bold">Get More</p></Link>
           </div>
         ))}
       </div>

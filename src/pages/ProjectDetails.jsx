@@ -16,7 +16,7 @@ const ProjectDetails = () => {
       /> */}
       <div className="flex items-center justify-center min-h-screen w-full py-8 px-1 md:px-8 lg:px-12 max-[640px]:py-20 align-middle">
         <div className="w-full max-w-[900px] p-4 md:p-8 bg-white rounded-2xl dark:bg-gray-800 max-[640px]:p-1">
-          <div className="flex flex-col-reverse md:flex-row justify-between bg-white max-w-4xl p-8 gap-10 dark:bg-gray-800 rounded-lg max-[640px]:p-1">
+          <div className="flex flex-col-reverse md:flex-row justify-start bg-white max-w-4xl p-1 py-7 gap-10 dark:bg-gray-800 rounded-lg max-[640px]:p-1">
             <div className="flex flex-col justify-between p-8 max-[640px]:p-7 bg-[#F4F0EC] rounded-3xl dark:bg-gray-900/40 dark:text-gray-400 dark:backdrop-blur-md space-y-4 h-[300px] border dark:border-gray-600 max-[640px]:mb-5 ">
               <p>
                 <span className="font-semibold">Client:</span>{" "}
@@ -45,7 +45,7 @@ const ProjectDetails = () => {
               </p>
             </div>
 
-            <div className="flex flex-col  gap-3 md:w-1/2 about-text">
+            <div className="flex flex-col  gap-3 md:w-1/2 about-text pt-2">
               <h5 className="text-3xl font-bold tracking-tight text-gray-900 mb-4 dark:text-white">
                 {project.title}
               </h5>

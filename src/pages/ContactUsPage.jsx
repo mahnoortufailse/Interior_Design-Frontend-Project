@@ -118,14 +118,14 @@ const ContactUsPage = () => {
                   </li>
                 </ul>
               </div>
-              <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
-                <h2 className="mb-4 text-2xl font-bold dark:text-white">
+              <div className="card h-fit max-w-6xl p-5 md:p-4" id="form">
+                <h2 className="mb-5 text-2xl font-bold dark:text-white">
                   Ready to Get Started?
                 </h2>
                 <form id="contactForm">
                   <div className="mb-6 max-[640px]:mb-3">
                     <div className="mx-0 mb-1 sm:mb-3">
-                      <div className="mx-0 mb-1 sm:mb-4">
+                      <div className="mx-0 mb-6 sm:mb-5">
                         <label
                           htmlFor="name"
                           className="pb-1 text-xs uppercase tracking-wider"
@@ -135,11 +135,11 @@ const ContactUsPage = () => {
                           id="name"
                           autoComplete="given-name"
                           placeholder="Your name"
-                          className="mb-4  pl-2 pr-4 shadow-md  sm:mb-3 w-full rounded-md py-2.10 px-2 block p-2 ps-5 text-base text-gray-900 border border-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          className="mb-4  pl-2 pr-4   sm:mb-3 w-full rounded-md py-2.10 px-2 block p-2 ps-5 text-base text-gray-900 border border-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           name="name"
                         />
                       </div>
-                      <div className="mx-0 mb-1 sm:mb-3">
+                      <div className="mx-0 mb-6 sm:mb-5">
                         <label
                           htmlFor="email"
                           className="pb-1 text-xs uppercase tracking-wider"
@@ -149,12 +149,12 @@ const ContactUsPage = () => {
                           id="email"
                           autoComplete="email"
                           placeholder="Your email address"
-                          className="mb-2  pl-2 pr-4 shadow-md  sm:mb-0 w-full rounded-md py-2.10 px-2 block p-2 ps-5 text-base text-gray-900 border border-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+                          className="mb-2  pl-2 pr-4  sm:mb-0 w-full rounded-md py-2.10 px-2 block p-2 ps-5 text-base text-gray-900 border border-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
                           name="email"
                         />
                       </div>
                     </div>
-                    <div className="mx-0 mb-1 sm:mb-3">
+                    <div className="mx-0 mb-6 sm:mb-5">
                       <label
                         htmlFor="textarea"
                         className="pb-1 text-xs uppercase tracking-wider"
@@ -165,13 +165,13 @@ const ContactUsPage = () => {
                         cols="30"
                         rows="5"
                         placeholder="Write your message..."
-                        className="mb-2  pl-2 pr-4 shadow-md  sm:mb-0 w-full rounded-md py-2.10 px-2 block p-1 ps-5 text-base text-gray-900 border border-gray-300  bg-gray-50  focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="mb-2  pl-2 pr-4  sm:mb-0 w-full rounded-md py-2.10 px-2 block p-1 ps-5 text-base text-gray-900 border border-gray-300  bg-gray-50  focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       ></textarea>
                     </div>
                   </div>
                   <button
                     type="button"
-                    className="text-white bg-gray-950 hover:bg-gray-600 font-semibold rounded-md text-sm px-6 py-3 w-full "
+                    className="text-white bg-gray-950 hover:bg-gray-600 font-semibold rounded-md text-sm px-6 py-3 w-full mt-5"
                   >
                     Send Now
                   </button>

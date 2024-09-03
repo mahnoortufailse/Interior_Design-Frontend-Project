@@ -54,7 +54,7 @@ const StyledWrapper = styled.div`
   width: 90%;
   padding-top: 40px;
   font-family: "Poppins", sans-serif;
-  justify-content: center;
+  justify-content: start;
 }
 
 .wrapper .icon {
@@ -91,8 +91,8 @@ const StyledWrapper = styled.div`
 .wrapper .tooltip::before {
   position: absolute;
   content: "";
-  height: 8px;
-  width: 8px;
+  height: 6px;
+  width: 6px;
   background: #000000;
   bottom: -3px;
   left: 50%;

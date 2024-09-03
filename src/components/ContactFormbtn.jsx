@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ContactFormbtn = () => {
   return (
     <StyledWrapper>
-      <a className="codepen-button">
+      <a href="/contactus" className="codepen-button">
         <span>
           Contact Us{" "}
           <svg viewBox="0 0 13 10" height="10px" width="15px">

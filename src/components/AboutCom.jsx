@@ -69,21 +69,6 @@ const AboutCom = () => {
       { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: 'power3.out', scrollTrigger: {
           trigger: '.about-text',
           start: 'top bottom',
-          end: 'bottom top',
-          scrub: true,
-          once: true
-        }
-      }
-    );
-
-    // Animate the image
-    gsap.fromTo(
-      '.aboutimage',
-      { opacity: 0, scale: 0.9 },
-      { opacity: 1, scale: 1, duration: 1.2, ease: 'power3.out', scrollTrigger: {
-          trigger: '.about-image',
-          start: 'top bottom',
-          end: 'bottom top',
           scrub: true,
           once: true
         }

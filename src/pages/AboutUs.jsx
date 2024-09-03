@@ -3,7 +3,7 @@ import CardsAbout from "../components/AboutComponent/CardsAbout"
 import ContactAboutForm from "../components/AboutComponent/ContactAboutForm"
 import HeroAll from "../components/HeroAll"
 import PeopleProfile from "../components/AboutComponent/PeopleProfile"
-
+import { PersonData } from "../utility/PersonsData"
 const AboutUs = () => {
   const data = {
     text: "About Us",
@@ -15,8 +15,8 @@ const AboutUs = () => {
      <HeroAll data={data}/>
      <BlockQuote/>
      <CardsAbout/>
-     <PeopleProfile/>
-     <ContactAboutForm/>
+     <PeopleProfile data={PersonData} renderAnimatedCard={true} heading={"What the People Thinks About Us"}/>
+     <ContactAboutForm heading={"Creative project? Let's have a productive talk."}/>
     </>
   )
 }

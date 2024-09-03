@@ -13,6 +13,8 @@ import Decoration from "./pages/Decoration";
 import ProjectsPage from "./pages/ProjectsPage";
 import Blog from "./pages/Blog";
 import ContactUsPage from "./pages/ContactUsPage";
+import TeamPage from "./pages/TeamPage";
+import SingleProfessional from "./pages/SingleProfessional";
 
 export default function App() {
   return (
@@ -52,6 +54,11 @@ export default function App() {
             path="/blogs"
             element={<Blog/>}
           />
+           <Route
+            path="/team"
+            element={<TeamPage/>}
+          />
+          <Route path="/team/:personName" element={<SingleProfessional/>} />
           <Route
             path="/contactus"
             element={<ContactUsPage/>}

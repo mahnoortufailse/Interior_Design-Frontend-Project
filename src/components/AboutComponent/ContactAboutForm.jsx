@@ -1,11 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
-const ContactAboutForm = () => {
+const ContactAboutForm = ({heading}) => {
   return (
     <>
       <div>
       <div className="my-8 mx-auto max-w-xl bg-white font-[sans-serif] p-10 dark:bg-gray-800 text-center">
-      <h1 className="text-3xl text-gray-800 font-bold text-center dark:text-white">Creative project? Let's have
-      a productive talk.</h1>
+      <h1 className="text-3xl text-gray-800 font-bold text-center dark:text-white">{heading}</h1>
       <form className="mt-12 space-y-6">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="text-start">
